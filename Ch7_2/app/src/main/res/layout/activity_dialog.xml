@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogActivity"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_dialog_act_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간 설정" />
+
+    <Button
+        android:id="@+id/btn_dialog_act_datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜 설정"/>
+
+    <TextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 날짜 "
+        android:layout_below="@id/btn_dialog_act_timepicker"/>
+
+</LinearLayout>
+
+
+
+
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:visibility="invisible">
+
+    </DatePicker>
+
+</RelativeLayout>

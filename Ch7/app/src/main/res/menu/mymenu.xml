@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/menu_red"
+        android:icon="@mipmap/ic_launcher"
+        android:title="red"
+        app:showAsAction="always|withText"
+        />
+    <item
+        android:id="@+id/menu_green"
+        android:icon="@mipmap/ic_launcher"
+        android:title="green"
+        app:showAsAction="always|withText"
+        />
+    <item
+        android:id="@+id/menu_blue"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Blue"
+        app:showAsAction="always|withText"
+        />
+</group>
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lo_map_fragmnet_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITLE"/>
+            <EditText
+                android:id="@+id/et_map_fragment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_map_fragmnet_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lo_map_fragmnet_title"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTENT"/>
+            <EditText
+                android:id="@+id/et_map_fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_map_fragment_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="글쓰기"
+            android:layout_below="@+id/lo_map_fragmnet_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_map_fragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/btn_map_fragment_write">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

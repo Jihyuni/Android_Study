@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/tv_sign_up_act_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="40dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lo_sign_up_act_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp">
+
+
+        <TextView
+
+            android:id="@+id/tv_sign_up_act_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Id" />
+
+        <EditText
+            android:id="@+id/et_sign_up_act_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/lo_sign_up_act_id"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lo_sign_up_act_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/lo_sign_up_act_id"
+        android:layout_margin="32dp">
+
+        <TextView
+            android:id="@+id/tv_sign_up_act_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/et_sign_up_act_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/lo_sign_up_act_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sign_up_act_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="0dp"
+            android:text="Complete" />
+
+        <Button
+            android:id="@+id/btn_sign_up_act_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="56dp"
+            android:layout_toEndOf="@+id/btn_sign_up_act_complete"
+            android:text="Close" />
+
+    </RelativeLayout>
+</RelativeLayout>

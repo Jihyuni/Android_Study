@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:id="@+id/lo_login_act_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"/>
+        <EditText
+            android:id="@+id/et_login_act_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                    "
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lo_login_act_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lo_login_act_id"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PW"/>
+        <EditText
+            android:id="@+id/et_login_act_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                    "
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login_act_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_below="@+id/lo_login_act_pw"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>
